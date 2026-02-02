@@ -87,16 +87,16 @@ function Header() {
                   id="header-all-objects-dropdown"
                   role="dialog"
                   aria-labelledby="header-all-objects-button"
-                  className="absolute top-full left-0 mt-2 w-[min(95vw,880px)] bg-white rounded-[12px] shadow-2xl border border-gray-light/30 overflow-hidden z-[100]"
+                  className="absolute top-full left-0 mt-2 w-[min(95vw,880px)] bg-white rounded-lg shadow-2xl border border-gray-light/30 overflow-hidden z-[100]"
                 >
                   {/* Верхняя строка: локация слева, Закрыть + крестик справа */}
                   <div className="flex items-center justify-between px-5 py-4 border-b border-gray-light/30">
                     <div className="flex items-center gap-2">
                       <img src={locationIcon} alt="" className="w-5 h-5" />
-                      <span className="text-[#1E1E1E] text-[15px] font-rubik font-normal">Москва и МО</span>
+                      <span className="text-dark text-[15px] font-rubik font-normal">Москва и МО</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-[#8E8E8E] text-[14px] font-rubik font-normal">Закрыть</span>
+                      <span className="text-gray-medium text-[14px] font-rubik font-normal">Закрыть</span>
                       <IconButton
                         variant="primary"
                         size="md"
@@ -117,14 +117,14 @@ function Header() {
                       <div key={i} className="space-y-3">
                         <div className="flex items-center gap-2">
                           <col.Icon />
-                          <h4 className="text-[#1E1E1E] text-[14px] font-rubik font-bold">{col.title}</h4>
+                          <h4 className="text-dark text-[14px] font-rubik font-bold">{col.title}</h4>
                         </div>
                         <ul className="space-y-1">
                           {col.items.map((item, j) => (
                             <li key={j}>
                               <Link
                                 to="/catalog"
-                                className="text-[#1E1E1E] text-[13px] font-rubik font-normal hover:text-primary transition-colors block py-0.5"
+                                className="text-dark text-[13px] font-rubik font-normal hover:text-primary transition-colors block py-0.5"
                                 onClick={() => setIsDropdownOpen(false)}
                               >
                                 {item}
@@ -137,9 +137,9 @@ function Header() {
                   </div>
 
                   {/* Нижний блок: текст, кнопка «Подобрать», иллюстрация */}
-                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4 px-5 py-5 bg-[#F5F6FC] rounded-b-[12px]">
+                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4 px-5 py-5 bg-gray-100 rounded-b-lg">
                     <div className="flex-1 text-center sm:text-left">
-                      <p className="text-[#1E1E1E] text-[14px] lg:text-[15px] font-rubik font-bold mb-3">
+                      <p className="text-dark text-[14px] lg:text-[15px] font-rubik font-bold mb-3">
                         Не нашли объект, который искали? Заполните анкету для индивидуального подбора
                       </p>
                       <Link
@@ -151,7 +151,7 @@ function Header() {
                         </Button>
                       </Link>
                     </div>
-                    <div className="w-32 h-20 rounded-[8px] bg-primary/10 flex items-center justify-center shrink-0">
+                    <div className="w-32 h-20 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <span className="text-primary/60 text-[11px] font-rubik">Иллюстрация</span>
                     </div>
                   </div>

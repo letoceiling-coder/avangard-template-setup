@@ -54,7 +54,7 @@ const POPULAR_LINKS = [
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#F8F9FB] text-[#1E1E1E]">
+    <footer className="w-full bg-surface-secondary text-dark">
       <div className="max-w-[1200px] mx-auto px-4 lg:px-[60px] py-10 lg:py-14">
         {/* Четыре колонки */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-10 lg:mb-12">
@@ -63,20 +63,20 @@ const Footer = () => {
             <Link to="/" className="inline-block">
               <img src={logo} alt="Live Grid" className="h-[44px] lg:h-[50px] w-auto object-contain" />
             </Link>
-            <p className="text-[#1E1E1E] text-[16px] font-rubik font-bold uppercase tracking-wide">
+            <p className="text-dark text-[16px] font-rubik font-bold uppercase tracking-wide">
               LIVE GRID
             </p>
-            <p className="text-[#5a5a5a] text-[14px] font-rubik font-normal leading-relaxed">
+            <p className="text-gray-muted text-[14px] font-rubik font-normal leading-relaxed">
               LiveGrid 2015–2026
             </p>
-            <p className="text-[#5a5a5a] text-[14px] font-rubik font-normal leading-relaxed">
+            <p className="text-gray-muted text-[14px] font-rubik font-normal leading-relaxed">
               Площадка недвижимости
             </p>
             <div className="pt-2 space-y-2">
-              <a href="#" className="block text-[#1E1E1E] text-[14px] font-rubik font-normal hover:text-primary transition-colors underline">
+              <a href="#" className="block text-dark text-[14px] font-rubik font-normal hover:text-primary transition-colors underline">
                 Политика конфиденциальности
               </a>
-              <a href="#" className="block text-[#1E1E1E] text-[14px] font-rubik font-normal hover:text-primary transition-colors underline">
+              <a href="#" className="block text-dark text-[14px] font-rubik font-normal hover:text-primary transition-colors underline">
                 Обработка персональных данных
               </a>
             </div>
@@ -84,13 +84,13 @@ const Footer = () => {
 
           {/* Колонка 2: Навигация */}
           <div className="space-y-4">
-            <h3 className="flex items-center gap-2 text-[#1E1E1E] text-[14px] lg:text-[16px] font-rubik font-bold uppercase tracking-wide">
+            <h3 className="flex items-center gap-2 text-dark text-[14px] lg:text-[16px] font-rubik font-bold uppercase tracking-wide">
               <GridIcon /> Навигация
             </h3>
             <ul className="space-y-2.5">
               {NAV_LINKS.map((item, i) => (
                 <li key={i}>
-                  <Link to="#" className="text-[#5a5a5a] text-[14px] font-rubik font-normal hover:text-primary transition-colors">
+                  <Link to="#" className="text-gray-muted text-[14px] font-rubik font-normal hover:text-primary transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -100,13 +100,13 @@ const Footer = () => {
 
           {/* Колонка 3: Популярное */}
           <div className="space-y-4">
-            <h3 className="flex items-center gap-2 text-[#1E1E1E] text-[14px] lg:text-[16px] font-rubik font-bold uppercase tracking-wide">
+            <h3 className="flex items-center gap-2 text-dark text-[14px] lg:text-[16px] font-rubik font-bold uppercase tracking-wide">
               <FlagIcon /> Популярное
             </h3>
             <ul className="space-y-2.5">
               {POPULAR_LINKS.map((item, i) => (
                 <li key={i}>
-                  <Link to={item.to} className="text-[#5a5a5a] text-[14px] font-rubik font-normal hover:text-primary transition-colors">
+                  <Link to={item.to} className="text-gray-muted text-[14px] font-rubik font-normal hover:text-primary transition-colors">
                     {item.label}
                   </Link>
                 </li>
@@ -116,10 +116,10 @@ const Footer = () => {
 
           {/* Колонка 4: Контакты + соцкнопки */}
           <div className="space-y-4">
-            <h3 className="flex items-center gap-2 text-[#1E1E1E] text-[14px] lg:text-[16px] font-rubik font-bold uppercase tracking-wide">
+            <h3 className="flex items-center gap-2 text-dark text-[14px] lg:text-[16px] font-rubik font-bold uppercase tracking-wide">
               <ChatIcon /> Контакты
             </h3>
-            <div className="text-[#5a5a5a] text-[14px] font-rubik font-normal space-y-2 leading-relaxed">
+            <div className="text-gray-muted text-[14px] font-rubik font-normal space-y-2 leading-relaxed">
               <p><a href="tel:+79163330808" className="hover:text-primary transition-colors">+7 916 333 08 08</a></p>
               <p>г. Москва, ул. Ленинградский проспект 68, к.1, офис 312</p>
               <p>Пн-Сб с 10:00 до 18:00</p>
@@ -132,7 +132,7 @@ const Footer = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white border border-[#DFDFDF] text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                  className="w-10 h-10 rounded-full bg-white border border-gray-light text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                   aria-label={label}
                 >
                   <Icon />
@@ -143,16 +143,16 @@ const Footer = () => {
         </div>
 
         {/* Нижний информационный блок с ссылками */}
-        <div className="border-t border-[#E5E7EB] pt-6 lg:pt-8">
-          <p className="text-[#8E8E8E] text-[12px] lg:text-[13px] font-rubik font-normal leading-relaxed max-w-[900px]">
+        <div className="border-t border-gray-200 pt-6 lg:pt-8">
+          <p className="text-gray-medium text-[12px] lg:text-[13px] font-rubik font-normal leading-relaxed max-w-[900px]">
             LiveGrid — база объявлений по недвижимости в России. Используя сервис, вы соглашаетесь с{' '}
-            <a href="#" className="text-[#1E1E1E] underline hover:text-primary transition-colors">Пользовательским соглашением</a>
+            <a href="#" className="text-dark underline hover:text-primary transition-colors">Пользовательским соглашением</a>
             {' '}и{' '}
-            <a href="#" className="text-[#1E1E1E] underline hover:text-primary transition-colors">Политикой конфиденциальности</a>
+            <a href="#" className="text-dark underline hover:text-primary transition-colors">Политикой конфиденциальности</a>
             , а также с условиями{' '}
-            <a href="#" className="text-[#1E1E1E] underline hover:text-primary transition-colors">Лицензионного соглашения</a>
+            <a href="#" className="text-dark underline hover:text-primary transition-colors">Лицензионного соглашения</a>
             . ООО «ЛайвГрид». Поддержка:{' '}
-            <a href="mailto:support@livegrid.ru" className="text-[#1E1E1E] underline hover:text-primary transition-colors">support@livegrid.ru</a>
+            <a href="mailto:support@livegrid.ru" className="text-dark underline hover:text-primary transition-colors">support@livegrid.ru</a>
             . На информационном ресурсе применяются рекомендательные технологии.
           </p>
         </div>

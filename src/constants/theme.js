@@ -1,4 +1,4 @@
-// Константы темы из Figma
+// Константы темы из Figma - синхронизированы с tailwind.config.js
 
 export const COLORS = {
   primary: {
@@ -12,9 +12,16 @@ export const COLORS = {
     100: '#1A1A1A',
   },
   gray: {
+    50: '#F9FAFB',
+    100: '#F5F6FC',
+    200: '#E5E7EB',
     light: '#DFDFDF',
     medium: '#8E8E8E',
-    dark: '#6B6B6B',
+    muted: '#5a5a5a',
+  },
+  surface: {
+    DEFAULT: '#FFFFFF',
+    secondary: '#F8F9FB',
   },
   white: '#FFFFFF',
   error: '#E74C3C',
@@ -42,10 +49,12 @@ export const FONT_WEIGHTS = {
 }
 
 export const BORDER_RADIUS = {
-  sm: '5px',
+  sm: '6px',
+  DEFAULT: '8px',
   md: '10px',
-  lg: '15px',
-  xl: '25px',
+  lg: '12px',
+  xl: '16px',
+  '2xl': '20px',
   full: '9999px',
 }
 

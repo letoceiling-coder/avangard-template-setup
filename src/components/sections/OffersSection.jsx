@@ -83,7 +83,7 @@ const OffersSection = () => {
 
           {/* Правая часть: Промо-карта (требование п.4) */}
           <div className="lg:w-[360px] flex-shrink-0">
-            <div className="relative bg-primary rounded-[16px] overflow-hidden shadow-xl h-full">
+            <div className="relative bg-primary rounded-xl overflow-hidden shadow-xl h-full">
               <div className="h-full flex flex-col justify-between p-6 lg:p-7">
                 {/* Текст и кнопка */}
                 <div className="space-y-5">
@@ -108,7 +108,7 @@ const OffersSection = () => {
                   <img
                     src={bannerImage}
                     alt="Каталог недвижимости"
-                    className="w-full h-[140px] object-cover object-bottom rounded-[8px]"
+                    className="w-full h-[140px] object-cover object-bottom rounded-lg"
                   />
                 </div>
               </div>

@@ -62,15 +62,15 @@ const QuizSection = () => {
   const hasSelection = isTypeStep ? !!selectedType : !!answers[currentStep?.id]
 
   return (
-    <section className="w-full bg-[#F8F9FB] py-10 lg:py-16">
+    <section className="w-full bg-surface-secondary py-10 lg:py-16">
       <div className="max-w-[1200px] mx-auto px-4 lg:px-[60px]">
-        <div className="rounded-[20px] border border-[#E5E7EB] bg-white shadow-sm flex flex-col lg:flex-row">
+        <div className="rounded-2xl border border-gray-200 bg-white shadow-sm flex flex-col lg:flex-row">
           {/* Левая часть — квиз (белая карточка): скругление по макету */}
-          <div className="flex-1 p-6 lg:p-8 lg:min-w-0 rounded-[20px] lg:rounded-l-[20px] lg:rounded-tr-none lg:rounded-br-none">
-            <h2 className="text-[#1E1E1E] text-[22px] lg:text-[26px] font-rubik font-bold mb-1">
+          <div className="flex-1 p-6 lg:p-8 lg:min-w-0 rounded-2xl lg:rounded-l-2xl lg:rounded-tr-none lg:rounded-br-none">
+            <h2 className="text-dark text-[22px] lg:text-[26px] font-rubik font-bold mb-1">
               Подберем объект под Ваш запрос
             </h2>
-            <p className="text-[#8E8E8E] text-[14px] lg:text-[15px] font-rubik font-normal mb-6">
+            <p className="text-gray-medium text-[14px] lg:text-[15px] font-rubik font-normal mb-6">
               {currentStep?.question}
             </p>
 
@@ -84,10 +84,10 @@ const QuizSection = () => {
                       key={opt.value}
                       type="button"
                       onClick={() => handleSelect('type', opt.value)}
-                      className={`relative rounded-[12px] border-2 p-4 flex flex-col items-center justify-end min-h-[120px] lg:min-h-[140px] text-left transition-colors ${
+                      className={`relative rounded-lg border-2 p-4 flex flex-col items-center justify-end min-h-[120px] lg:min-h-[140px] text-left transition-colors ${
                         isSelected
                           ? 'bg-primary border-primary text-white'
-                          : 'bg-white border-[#E5E7EB] text-[#1E1E1E] hover:border-primary/50'
+                          : 'bg-white border-gray-200 text-dark hover:border-primary/50'
                       }`}
                     >
                       <div className="w-full flex-1 flex items-center justify-center mb-2">
@@ -100,7 +100,7 @@ const QuizSection = () => {
                       </div>
                       <div className="w-full flex items-center justify-between gap-2">
                         <div className={`w-5 h-5 rounded flex items-center justify-center shrink-0 ${
-                          isSelected ? 'bg-white/90 text-primary' : 'border-2 border-[#8E8E8E]'
+                          isSelected ? 'bg-white/90 text-primary' : 'border-2 border-gray-medium'
                         }`}>
                           {isSelected ? <CheckIcon /> : null}
                         </div>
@@ -122,8 +122,8 @@ const QuizSection = () => {
                       key={opt.value}
                       type="button"
                       onClick={() => handleSelect(currentStep.id, opt.value)}
-                      className={`px-5 py-3 rounded-[10px] text-[14px] font-rubik font-medium transition-colors ${
-                        isSelected ? 'bg-primary text-white' : 'bg-[#F5F6FC] text-[#1E1E1E] hover:bg-primary/10'
+                      className={`px-5 py-3 rounded-md text-[14px] font-rubik font-medium transition-colors ${
+                        isSelected ? 'bg-primary text-white' : 'bg-gray-100 text-dark hover:bg-primary/10'
                       }`}
                     >
                       {opt.label}
@@ -133,7 +133,7 @@ const QuizSection = () => {
               </div>
             ) : (
               <div className="mb-6">
-                <p className="text-[#8E8E8E] text-[14px] font-rubik font-normal mb-4">
+                <p className="text-gray-medium text-[14px] font-rubik font-normal mb-4">
                   Ваши ответы сохранены. Нажмите «Следующий», чтобы перейти к подборке.
                 </p>
                 <Button
@@ -152,7 +152,7 @@ const QuizSection = () => {
                 <span
                   key={i}
                   className={`inline-block h-1 rounded-full transition-all ${
-                    i === step ? 'w-6 bg-primary' : 'w-6 bg-[#E5E7EB]'
+                    i === step ? 'w-6 bg-primary' : 'w-6 bg-gray-200'
                   }`}
                   aria-hidden
                 />
@@ -166,7 +166,7 @@ const QuizSection = () => {
                 size="md"
                 onClick={handleBack}
                 disabled={isFirstStep}
-                className="bg-[#E5E7EB] text-[#5a5a5a] border-transparent hover:bg-[#DFDFDF]"
+                className="bg-gray-200 text-gray-muted border-transparent hover:bg-gray-light"
               >
                 Назад
               </Button>
@@ -182,14 +182,14 @@ const QuizSection = () => {
           </div>
 
           {/* Правая часть — синяя панель: закругление всех углов по макету Figma 98-2562 */}
-          <div className="w-full lg:w-[280px] xl:w-[320px] bg-primary flex-shrink-0 p-6 lg:p-8 flex flex-col items-center justify-center text-center rounded-[20px] mt-4 lg:mt-0 lg:ml-4">
+          <div className="w-full lg:w-[280px] xl:w-[320px] bg-primary flex-shrink-0 p-6 lg:p-8 flex flex-col items-center justify-center text-center rounded-2xl mt-4 lg:mt-0 lg:ml-4">
             <h3 className="text-white text-[18px] lg:text-[20px] font-rubik font-bold mb-4">
               Подберем за 5 минут
             </h3>
             <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-white mb-6">
               <ClockIcon />
             </div>
-            <div className="w-full max-w-[180px] h-[120px] rounded-[12px] bg-white/10 flex items-center justify-center">
+            <div className="w-full max-w-[180px] h-[120px] rounded-lg bg-white/10 flex items-center justify-center">
               <span className="text-white/60 text-[12px] font-rubik">Иллюстрация</span>
             </div>
           </div>
