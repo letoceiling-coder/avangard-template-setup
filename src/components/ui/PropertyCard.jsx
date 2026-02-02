@@ -40,7 +40,7 @@ const PropertyCard = ({ id, image, title, price, location, tags = [] }) => {
   }
 
   return (
-    <div className="relative bg-white rounded-[12px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-light/20">
+    <div className="relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-light/20">
       {/* Изображение */}
       <div className="relative w-full h-[200px] overflow-hidden">
         <img 

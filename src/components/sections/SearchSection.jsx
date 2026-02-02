@@ -175,9 +175,9 @@ const SearchSection = () => {
 
           {/* Панель фильтров (Figma 95-4): открывается по клику на кнопку фильтра */}
           {isFilterOpen && (
-            <div className="absolute left-0 right-0 top-full z-50 mt-2 rounded-[12px] border border-gray-light bg-white p-6 shadow-xl">
+            <div className="absolute left-0 right-0 top-full z-50 mt-2 rounded-lg border border-gray-light bg-white p-6 shadow-xl">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-[#1E1E1E] text-[16px] font-rubik font-semibold">Фильтры</h3>
+                <h3 className="text-dark text-[16px] font-rubik font-semibold">Фильтры</h3>
                 <button
                   type="button"
                   onClick={() => setIsFilterOpen(false)}
@@ -189,8 +189,8 @@ const SearchSection = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
                 <div>
-                  <label className="block text-[#5a5a5a] text-[12px] font-rubik font-medium mb-1.5">Тип объекта</label>
-                  <select className="w-full h-9 px-3 border border-gray-light rounded-[8px] text-[13px] font-rubik focus:outline-none focus:border-primary">
+                  <label className="block text-gray-muted text-[12px] font-rubik font-medium mb-1.5">Тип объекта</label>
+                  <select className="w-full h-9 px-3 border border-gray-light rounded-lg text-[13px] font-rubik focus:outline-none focus:border-primary">
                     <option>Квартира</option>
                     <option>Дом</option>
                     <option>Участок</option>
@@ -198,16 +198,16 @@ const SearchSection = () => {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-[#5a5a5a] text-[12px] font-rubik font-medium mb-1.5">Цена, от</label>
-                  <input type="number" placeholder="0" className="w-full h-9 px-3 border border-gray-light rounded-[8px] text-[13px] font-rubik focus:outline-none focus:border-primary" />
+                  <label className="block text-gray-muted text-[12px] font-rubik font-medium mb-1.5">Цена, от</label>
+                  <input type="number" placeholder="0" className="w-full h-9 px-3 border border-gray-light rounded-lg text-[13px] font-rubik focus:outline-none focus:border-primary" />
                 </div>
                 <div>
-                  <label className="block text-[#5a5a5a] text-[12px] font-rubik font-medium mb-1.5">Цена, до</label>
-                  <input type="number" placeholder="Любая" className="w-full h-9 px-3 border border-gray-light rounded-[8px] text-[13px] font-rubik focus:outline-none focus:border-primary" />
+                  <label className="block text-gray-muted text-[12px] font-rubik font-medium mb-1.5">Цена, до</label>
+                  <input type="number" placeholder="Любая" className="w-full h-9 px-3 border border-gray-light rounded-lg text-[13px] font-rubik focus:outline-none focus:border-primary" />
                 </div>
                 <div>
-                  <label className="block text-[#5a5a5a] text-[12px] font-rubik font-medium mb-1.5">Комнаты</label>
-                  <select className="w-full h-9 px-3 border border-gray-light rounded-[8px] text-[13px] font-rubik focus:outline-none focus:border-primary">
+                  <label className="block text-gray-muted text-[12px] font-rubik font-medium mb-1.5">Комнаты</label>
+                  <select className="w-full h-9 px-3 border border-gray-light rounded-lg text-[13px] font-rubik focus:outline-none focus:border-primary">
                     <option>Любое</option>
                     <option>1</option>
                     <option>2</option>

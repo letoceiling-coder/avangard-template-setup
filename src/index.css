@@ -2,6 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Primary colors */
+  --color-primary: #3CA4F4;
+  --color-primary-dark: #2A8FD9;
+  --color-primary-light: #6BB8F7;
+
+  /* Text colors */
+  --color-text: #1E1E1E;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8E8E8E;
+
+  /* Background colors */
+  --color-background: #FFFFFF;
+  --color-surface: #F8F9FB;
+  --color-surface-alt: #F5F6FC;
+
+  /* Border colors */
+  --color-border: #DFDFDF;
+  --color-border-light: #E5E7EB;
+
+  /* Status colors */
+  --color-success: #27AE60;
+  --color-warning: #F39C12;
+  --color-danger: #E74C3C;
+
+  /* Spacing */
+  --section-padding-mobile: 32px;
+  --section-padding-desktop: 48px;
+  --container-padding-mobile: 16px;
+  --container-padding-desktop: 60px;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +52,23 @@ body {
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 #root {
   min-height: 100vh;
+}
+
+/* Utility classes for design tokens */
+@layer utilities {
+  .text-muted {
+    color: var(--color-text-muted);
+  }
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+  .border-subtle {
+    border-color: var(--color-border-light);
+  }
 }
