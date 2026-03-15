@@ -23,6 +23,10 @@ import GatewayPro from "./pages/GatewayPro";
 import Marketplace from "./pages/Marketplace";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import VideoAssistant from "./pages/VideoAssistant";
+import VoiceAssistantPage from "./pages/VoiceAssistantPage";
+import LiveAIMode from "./pages/LiveAIMode";
+import MultimodalChat from "./pages/MultimodalChat";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +56,10 @@ const App = () => (
             <Route path="/gateway-pro" element={<GatewayPro />} />
             <Route path="/marketplace" element={<Marketplace />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/video-assistant" element={<VideoAssistant />} />
+            <Route path="/voice-assistant" element={<VoiceAssistantPage />} />
+            <Route path="/live-ai" element={<LiveAIMode />} />
+            <Route path="/multimodal-chat" element={<MultimodalChat />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
