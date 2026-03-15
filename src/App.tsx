@@ -27,6 +27,7 @@ import VideoAssistant from "./pages/VideoAssistant";
 import VoiceAssistantPage from "./pages/VoiceAssistantPage";
 import LiveAIMode from "./pages/LiveAIMode";
 import MultimodalChat from "./pages/MultimodalChat";
+import AICreationCanvas from "./pages/AICreationCanvas";
 
 const queryClient = new QueryClient();
 
