@@ -61,6 +61,7 @@ const App = () => (
             <Route path="/voice-assistant" element={<VoiceAssistantPage />} />
             <Route path="/live-ai" element={<LiveAIMode />} />
             <Route path="/multimodal-chat" element={<MultimodalChat />} />
+            <Route path="/ai-canvas" element={<AICreationCanvas />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

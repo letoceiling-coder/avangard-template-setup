@@ -29,6 +29,12 @@ const navGroups = [
     ],
   },
   {
+    label: "Canvas",
+    items: [
+      { title: "AI Creation Canvas", url: "/ai-canvas", icon: PenTool },
+    ],
+  },
+  {
     label: "Creation",
     items: [
       { title: "Voice Studio", url: "/voice-studio", icon: Mic },
