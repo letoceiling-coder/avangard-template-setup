@@ -66,6 +66,7 @@ const navGroups = [
   {
     label: "Pro",
     items: [
+      { title: "Gateway Core", url: "/gateway-core", icon: Network },
       { title: "AI Gateway Pro", url: "/gateway-pro", icon: Zap },
       { title: "AI Super Router", url: "/super-router", icon: Route },
       { title: "Demo Media", url: "/demo-media", icon: Clapperboard },
