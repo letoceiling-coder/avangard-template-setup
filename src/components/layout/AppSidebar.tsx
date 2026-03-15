@@ -1,6 +1,7 @@
 import {
   LayoutDashboard, MessageSquare, Image, Mic, BarChart3, Bot, Wrench, Database,
-  Key, CreditCard, Coins, HardDrive, FileText, Activity, Zap, ShoppingBag, Settings, Layers
+  Key, CreditCard, Coins, HardDrive, FileText, Activity, Zap, ShoppingBag, Settings, Layers,
+  Video, Waves, Radio, Sparkles
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
