@@ -30,6 +30,8 @@ import MultimodalChat from "./pages/MultimodalChat";
 import AICreationCanvas from "./pages/AICreationCanvas";
 import AIModelHub from "./pages/AIModelHub";
 import AIAutomationBuilder from "./pages/AIAutomationBuilder";
+import AISuperRouter from "./pages/AISuperRouter";
+import DemoMediaGenerator from "./pages/DemoMediaGenerator";
 
 const queryClient = new QueryClient();
 
